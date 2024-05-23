@@ -14,7 +14,7 @@ import androidx.appcompat.app.AlertDialog;
 import java.util.List;
 
 public class MisSolicitudesConductorCamion extends AppCompatActivity implements View.OnClickListener{
-    Button btnCCMMSVolver, btnCCMMSMiUbicacion, btnCCMMSRutaSugerida, btnCCMMSInformacionSolicitud; //CCMMS Conductor Camion Menu Mis Solicitudes
+    Button btnCCMMSVolver, btnCCMMSMiUbicacion, btnCCMMSRutaSugerida, btnCCMMSChatSolicitud, btnCCMMSInformacionSolicitud; //CCMMS Conductor Camion Menu Mis Solicitudes
     Spinner spiCCMMSMisSolicitudes;
     TextView sa;
 
@@ -38,11 +38,13 @@ public class MisSolicitudesConductorCamion extends AppCompatActivity implements 
         btnCCMMSMiUbicacion = (Button) findViewById(R.id.button_CCMMS_MiUbicacion);
         btnCCMMSRutaSugerida = (Button) findViewById(R.id.button_CCMMS_RutaSugerida);
         btnCCMMSInformacionSolicitud = (Button) findViewById(R.id.button_CCMMS_InformacionSolicitud);
+        btnCCMMSChatSolicitud = (Button) findViewById(R.id.button_CCMMS_ChatSolicitud);
         btnCCMMSVolver = (Button) findViewById(R.id.button_CCMMS_Volver);
 
         btnCCMMSMiUbicacion.setOnClickListener(this);
         btnCCMMSRutaSugerida.setOnClickListener(this);
         btnCCMMSInformacionSolicitud.setOnClickListener(this);
+        btnCCMMSChatSolicitud.setOnClickListener(this);
         btnCCMMSVolver.setOnClickListener(this);
 
         Bundle b= getIntent().getExtras();
@@ -83,6 +85,13 @@ public class MisSolicitudesConductorCamion extends AppCompatActivity implements 
             iccmms2.putExtra("Id", id);
             iccmms2.putExtra("IdS", ids);
             startActivity(iccmms2);
+
+        }else if (v.getId() == R.id.button_CCMMS_ChatSolicitud) {
+            ids = daoSCCMMS.obtenerIdSolicitudByNombreSolicitud(spiCCMMSMisSolicitudes.getSelectedItem().toString());
+            Intent iccmms3 = new Intent(MisSolicitudesConductorCamion.this, ChatNotificaciones.class);
+            iccmms3.putExtra("Id", id);
+            iccmms3.putExtra("IdS", ids);
+            startActivity(iccmms3);
 
         }else if (v.getId() == R.id.button_CCMMS_InformacionSolicitud) {
             String nombreSolicitudSeleccionada = spiCCMMSMisSolicitudes.getSelectedItem().toString();

@@ -103,11 +103,11 @@ public class MisSolicitudesPropietarioCamion extends AppCompatActivity implement
             }
 
         }else if (v.getId() == R.id.button_PCMMS_ChatSolicitud) {
-//            ids = daoSCMMS.obtenerIdSolicitudByNombreSolicitud(spiCMMSMisSolicitudes.getSelectedItem().toString());
-//            Intent icmms5 = new Intent(MisSolicitudesCliente.this, .class);
-//            icmms5.putExtra("Id", id);
-//            icmms5.putExtra("IdS", ids);
-//            startActivity(icmms5);
+            ids = daoSPCMMS.obtenerIdSolicitudByNombreSolicitud(spiPCMMSMisSolicitudes.getSelectedItem().toString());
+            Intent ipcmms3 = new Intent(MisSolicitudesPropietarioCamion.this, ChatNotificaciones.class);
+            ipcmms3.putExtra("Id", id);
+            ipcmms3.putExtra("IdS", ids);
+            startActivity(ipcmms3);
 
         }else if (v.getId() == R.id.button_PCMMS_Volver) {
             Intent ipcmms4 = new Intent(MisSolicitudesPropietarioCamion.this, InicioPropietarioCamion.class);

@@ -81,4 +81,5 @@
     <string name="longitud">Longitud</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="compartir_ubicacion">Compartir Ubicación</string>
+    <string name="cerrar_chat">Cerrar Chat</string>
 </resources>

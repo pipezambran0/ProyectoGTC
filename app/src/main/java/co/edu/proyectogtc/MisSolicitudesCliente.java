@@ -144,11 +144,11 @@ public class MisSolicitudesCliente extends AppCompatActivity implements View.OnC
             }
 
         }else if (v.getId() == R.id.button_CMMS_ChatSolicitud) {
-//            ids = daoSCMMS.obtenerIdSolicitudByNombreSolicitud(spiCMMSMisSolicitudes.getSelectedItem().toString());
-//            Intent icmms5 = new Intent(MisSolicitudesCliente.this, .class);
-//            icmms5.putExtra("Id", id);
-//            icmms5.putExtra("IdS", ids);
-//            startActivity(icmms5);
+            ids = daoSCMMS.obtenerIdSolicitudByNombreSolicitud(spiCMMSMisSolicitudes.getSelectedItem().toString());
+            Intent icmms5 = new Intent(MisSolicitudesCliente.this, ChatNotificaciones.class);
+            icmms5.putExtra("Id", id);
+            icmms5.putExtra("IdS", ids);
+            startActivity(icmms5);
 
         }else if (v.getId() == R.id.button_CMMS_FinalizarSolicitud) {
             ids = daoSCMMS.obtenerIdSolicitudByNombreSolicitud(spiCMMSMisSolicitudes.getSelectedItem().toString());
