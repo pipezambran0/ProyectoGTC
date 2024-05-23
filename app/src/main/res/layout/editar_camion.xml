@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editar_camion"
+    android:background="@mipmap/fondo_propietario_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarCamion">
+
+    <TextView
+        android:id="@+id/textView_editarCamion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/editar_camion"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_editarCamion_Placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/placa"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_editarCamion"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/textView_editarCamion"
+        app:layout_constraintTop_toBottomOf="@id/textView_editarCamion" />
+
+    <EditText
+        android:id="@+id/editText_editarCamion_Marca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/marca"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_editarCamion_Placa"
+        app:layout_constraintStart_toStartOf="@id/editText_editarCamion_Placa"
+        app:layout_constraintTop_toBottomOf="@id/editText_editarCamion_Placa" />
+
+    <EditText
+        android:id="@+id/editText_editarCamion_Estado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Estado"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_editarCamion_Marca"
+        app:layout_constraintStart_toStartOf="@id/editText_editarCamion_Marca"
+        app:layout_constraintTop_toBottomOf="@id/editText_editarCamion_Marca" />
+
+    <Spinner
+        android:id="@+id/spinner_editarCamion_ConductoresDisponibles"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_editarCamion_Estado"
+        app:layout_constraintStart_toStartOf="@+id/editText_editarCamion_Estado"
+        app:layout_constraintTop_toBottomOf="@+id/editText_editarCamion_Estado" />
+
+    <Button
+        android:id="@+id/button_editarCamion_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/actualizar"
+        app:layout_constraintEnd_toEndOf="@id/spinner_editarCamion_ConductoresDisponibles"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="@id/spinner_editarCamion_ConductoresDisponibles"
+        app:layout_constraintTop_toBottomOf="@id/spinner_editarCamion_ConductoresDisponibles" />
+
+    <Button
+        android:id="@+id/button_editarCamion_cancelar"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="@id/button_editarCamion_actualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/button_editarCamion_actualizar"
+        app:layout_constraintTop_toBottomOf="@id/button_editarCamion_actualizar" />
+
+    <TextView
+        android:id="@+id/textView_editarCamion_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sesion Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

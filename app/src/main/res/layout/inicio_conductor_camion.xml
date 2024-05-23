@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicio_conductor_camion"
+    android:background="@mipmap/fondo_conductor_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioConductorCamion">
+
+    <TextView
+        android:id="@+id/textView_MICC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/menu_conductor_de_camion"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_MICC"
+        android:layout_width="233dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/conductor"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_MICC"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/textView_MICC"
+        app:layout_constraintTop_toBottomOf="@id/textView_MICC" />
+
+    <Button
+        android:id="@+id/button_MICC_MisCamionesAsignados"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/mis_camiones_asignados"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_MICC"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@id/imageView_MICC"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_MICC" />
+
+    <Button
+        android:id="@+id/button_MICC_MisSolicitudesAsignadas"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/mis_solicitudes_asignadas"
+        app:layout_constraintEnd_toEndOf="@+id/button_MICC_MisCamionesAsignados"
+        app:layout_constraintStart_toStartOf="@+id/button_MICC_MisCamionesAsignados"
+        app:layout_constraintTop_toBottomOf="@+id/button_MICC_MisCamionesAsignados" />
+
+    <Button
+        android:id="@+id/button_MICC_Opciones"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/opciones"
+        app:layout_constraintEnd_toEndOf="@+id/button_MICC_MisSolicitudesAsignadas"
+        app:layout_constraintStart_toStartOf="@+id/button_MICC_MisSolicitudesAsignadas"
+        app:layout_constraintTop_toBottomOf="@+id/button_MICC_MisSolicitudesAsignadas" />
+
+    <Button
+        android:id="@+id/button_MICC_Salir"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/salir"
+        app:layout_constraintEnd_toEndOf="@+id/button_MICC_Opciones"
+        app:layout_constraintStart_toStartOf="@+id/button_MICC_Opciones"
+        app:layout_constraintTop_toBottomOf="@+id/button_MICC_Opciones" />
+
+    <TextView
+        android:id="@+id/textView_MICC_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sesion Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

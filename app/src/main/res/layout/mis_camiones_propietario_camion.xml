@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mis_camiones_propietario_camion"
+    android:background="@mipmap/fondo_propietario_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisCamionesPropietarioCamion">
+
+    <TextView
+        android:id="@+id/textView_PCMMC_MisCamiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/mis_camiones"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_PCMMC_MisCamiones"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textView_PCMMC_MisCamiones"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMMC_MisCamiones"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMMC_MisCamiones" />
+
+    <Button
+        android:id="@+id/button_PCMMC_AgregarCamion"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/agregar_camion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/button_PCMMC_Volver"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_PCMMC_MisCamiones" />
+
+    <Button
+        android:id="@+id/button_PCMMC_EditarCamion"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/editar_camion"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMMC_AgregarCamion"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMMC_AgregarCamion"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMMC_AgregarCamion" />
+
+    <Button
+        android:id="@+id/button_PCMMC_EliminarCamion"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/eliminar_camion"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMMC_EditarCamion"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMMC_EditarCamion"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMMC_EditarCamion" />
+
+    <Button
+        android:id="@+id/button_PCMMC_InformacionCamion"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/informacion_camion"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMMC_EliminarCamion"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMMC_EliminarCamion"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMMC_EliminarCamion" />
+
+    <Button
+        android:id="@+id/button_PCMMC_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_PCMMC_MisCamiones" />
+
+    <TextView
+        android:id="@+id/textView_PCMMC_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

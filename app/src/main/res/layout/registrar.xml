@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registrar"
+    android:background="@mipmap/fondo_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+    <TextView
+        android:id="@+id/textView_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/crear_cuenta_nueva"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/usuario"
+        app:layout_constraintEnd_toEndOf="@+id/textView_registrar"
+        app:layout_constraintStart_toStartOf="@+id/textView_registrar"
+        app:layout_constraintTop_toBottomOf="@id/textView_registrar">
+
+        <EditText
+            android:id="@+id/editText_registrar_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="40dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_contraseña"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contraseña"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_usuario"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_usuario"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_usuario">
+
+        <EditText
+            android:id="@+id/editText_registrar_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:minHeight="40dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_confirmar_contraseña"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirmar_contraseña"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_contraseña"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_contraseña"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_contraseña">
+
+        <EditText
+            android:id="@+id/editText_registrar_confirmar_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_confirmar_contraseña"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_confirmar_contraseña"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_confirmar_contraseña">
+
+        <EditText
+            android:id="@+id/editText_registrar_correo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_y_apellido"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_correo"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_correo"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_correo">
+
+        <EditText
+            android:id="@+id/editText_registrar_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_cedula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/cedula"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_nombre"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_nombre"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_nombre">
+
+        <EditText
+            android:id="@+id/editText_registrar_cedula"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_registrar_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/genero"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_cedula"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_cedula" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_registar_genero"
+        android:layout_width="117dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_cedula"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_cedula">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_registar_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton_registrar_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radioButton_registrar_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/radioButton_registrar_otro"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Otro" />
+
+        </RadioGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_registrar_rol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:entries="@array/user_registrar_rol"
+        android:hint="@string/rol"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_cedula"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_cedula"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_registar_genero" />
+
+    <Button
+        android:id="@+id/button_registrar_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/registrarse"
+        app:layout_constraintEnd_toEndOf="@id/spinner_registrar_rol"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@id/spinner_registrar_rol"
+        app:layout_constraintTop_toBottomOf="@id/spinner_registrar_rol" />
+
+    <Button
+        android:id="@+id/button_registrar_cancelar"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="@id/button_registrar_registrarse"
+        app:layout_constraintStart_toStartOf="@id/button_registrar_registrarse"
+        app:layout_constraintTop_toBottomOf="@id/button_registrar_registrarse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mis_solicitudes_propietario_camion"
+    android:background="@mipmap/fondo_propietario_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisSolicitudesPropietarioCamion">
+
+    <TextView
+        android:id="@+id/textView_PCMMS_MisSolicitudes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/mis_solicitudes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_PCMMS_MisSolicitudes"
+        android:layout_width="356dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textView_PCMMS_MisSolicitudes"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMMS_MisSolicitudes"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMMS_MisSolicitudes" />
+
+
+    <Button
+        android:id="@+id/button_PCMMS_AsignarCamion"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/asignar_camion"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_PCMMS_MisSolicitudes"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/spinner_PCMMS_MisSolicitudes"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_PCMMS_MisSolicitudes" />
+
+
+    <Button
+        android:id="@+id/button_PCMMS_InformacionSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/informacion_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMMS_ChatSolicitud"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMMS_ChatSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMMS_ChatSolicitud" />
+
+    <Button
+        android:id="@+id/button_PCMMS_ChatSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/chat_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMMS_AsignarCamion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMMS_AsignarCamion"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMMS_AsignarCamion" />
+
+    <Button
+        android:id="@+id/button_PCMMS_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMMS_InformacionSolicitud"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMMS_InformacionSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMMS_InformacionSolicitud" />
+
+    <TextView
+        android:id="@+id/textView_PCMMS_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

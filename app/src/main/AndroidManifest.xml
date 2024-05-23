@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoGTC"
+        tools:targetApi="31">
+        <activity
+            android:name=".DetalleSolicitudToolBar"
+            android:exported="false" />
+        <activity
+            android:name=".InicioClienteToolBar"
+            android:exported="false" />
+        <activity
+            android:name=".FinalizarSolicitud"
+            android:exported="false" />
+        <activity
+            android:name=".RutaSugerida"
+            android:exported="false" />
+        <activity
+            android:name=".EditarCamion"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarCamion"
+            android:exported="false" />
+        <activity
+            android:name=".MisCamionesPropietarioCamion"
+            android:exported="false" />
+        <activity
+            android:name=".AsignarCamion"
+            android:exported="false" />
+        <activity
+            android:name=".MisSolicitudesPropietarioCamion"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleSolicitud"
+            android:exported="false" />
+        <activity
+            android:name=".VerSolicitudes"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD4Z8OXvFmkjLHlUlY80TPEJA0GxBRIfbs" />
+
+        <activity
+            android:name=".MiUbicacionConductorCamion"
+            android:exported="false" />
+        <activity
+            android:name=".MisSolicitudesConductorCamion"
+            android:exported="false" />
+        <activity
+            android:name=".MisCamionesConductorCamion"
+            android:exported="false" />
+        <activity
+            android:name=".EditarSolicitud"
+            android:exported="false" />
+        <activity
+            android:name=".CrearSolicitud"
+            android:exported="false" />
+        <activity
+            android:name=".MisSolicitudesCliente"
+            android:exported="false" />
+        <activity
+            android:name=".EditarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Mostrar"
+            android:exported="false" />
+        <activity
+            android:name=".Opciones"
+            android:exported="false" />
+        <activity
+            android:name=".InicioPropietarioCamion"
+            android:exported="false" />
+        <activity
+            android:name=".InicioConductorCamion"
+            android:exported="false" />
+        <activity
+            android:name=".InicioCliente"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar"
+            android:exported="false" />
+        <activity
+            android:name=".Main"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

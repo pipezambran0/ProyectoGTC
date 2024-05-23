@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mis_solicitudes_cliente"
+    android:background="@mipmap/fondo_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisSolicitudesCliente">
+
+    <TextView
+        android:id="@+id/textView_CMMS_MisSolicitudes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/mis_solicitudes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_CMMS_MisSolicitudes"
+        android:layout_width="356dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textView_CMMS_MisSolicitudes"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView_CMMS_MisSolicitudes"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CMMS_MisSolicitudes" />
+
+    <Button
+        android:id="@+id/button_CMMS_CrearSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/crear_solicitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/button_CMMS_Volver"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_CMMS_MisSolicitudes" />
+
+    <Button
+        android:id="@+id/button_CMMS_EditarSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/editar_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_CMMS_CrearSolicitud"
+        app:layout_constraintStart_toStartOf="@+id/button_CMMS_CrearSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_CMMS_CrearSolicitud" />
+
+    <Button
+        android:id="@+id/button_CMMS_EliminarSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/eliminar_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_CMMS_EditarSolicitud"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_CMMS_EditarSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_CMMS_EditarSolicitud" />
+
+    <Button
+        android:id="@+id/button_CMMS_InformacionSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/informacion_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_CMMS_EliminarSolicitud"
+        app:layout_constraintStart_toStartOf="@+id/button_CMMS_EliminarSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_CMMS_EliminarSolicitud" />
+
+    <Button
+        android:id="@+id/button_CMMS_ChatSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/chat_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_CMMS_InformacionSolicitud"
+        app:layout_constraintStart_toStartOf="@+id/button_CMMS_InformacionSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_CMMS_InformacionSolicitud" />
+
+    <Button
+        android:id="@+id/button_CMMS_FinalizarSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/finalizar_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_CMMS_ChatSolicitud"
+        app:layout_constraintStart_toStartOf="@+id/button_CMMS_ChatSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_CMMS_ChatSolicitud" />
+
+    <Button
+        android:id="@+id/button_CMMS_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_CMMS_MisSolicitudes" />
+
+    <TextView
+        android:id="@+id/textView_CMMS_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

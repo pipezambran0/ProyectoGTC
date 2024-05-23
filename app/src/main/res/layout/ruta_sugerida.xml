@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ruta_sugerida"
+    android:background="@mipmap/fondo_conductor_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RutaSugerida">
+
+    <TextView
+        android:id="@+id/textView_CCRS_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CCRS_Lugar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lugar 2"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCRS_Lugar1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCRS_Lugar1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCRS_Lugar1" />
+
+    <TextView
+        android:id="@+id/textView_CCRS_Lugar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_CCRS_Lugar1"
+        android:layout_marginTop="80dp"
+        android:text="Lugar 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CCRS_Distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_CCRS_Lugar2"
+        android:layout_marginTop="20dp"
+        android:text="Distancia"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCRS_Lugar2"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCRS_Lugar2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCRS_Lugar2" />
+
+    <Button
+        android:id="@+id/button_CCRS_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_CCRS_Distancia"
+        android:layout_marginTop="20dp"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="@+id/map_CCRS_Recorrido"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/map_CCRS_Recorrido"
+        app:layout_constraintTop_toBottomOf="@+id/map_CCRS_Recorrido" />
+
+    <fragment
+        android:id="@+id/map_CCRS_Recorrido"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="357dp"
+        android:layout_height="503dp"
+        android:layout_below="@id/button_CCRS_Volver"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCRS_Distancia"
+        map:cameraZoom="10"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

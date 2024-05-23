@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detalle_solicitud_tool_bar"
+    android:background="@mipmap/fondo_propietario_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleSolicitudToolBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Detalle de la Solicitud"
+        app:titleTextColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_NombreSolicitud"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/nombre_solicitud"
+        android:minHeight="80dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_FechaCarga"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/fecha_carga"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_NombreSolicitud"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_NombreSolicitud"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_NombreSolicitud" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_FechaDescarga"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/fecha_descarga"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_FechaCarga"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_FechaCarga"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_FechaCarga" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_LugarCarga"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/lugar_carga"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_FechaDescarga"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_FechaDescarga"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_FechaDescarga" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_LugarDescarga"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/lugar_descarga"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_LugarCarga"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_LugarCarga"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_LugarCarga" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_TipoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/tipo_material"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_LugarDescarga"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_LugarDescarga"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_LugarDescarga" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_PesoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/peso_material"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_TipoMaterial"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_TipoMaterial"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_TipoMaterial" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_TamañoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/tamaño_material"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_VSDSPC_PesoMaterial"
+        app:layout_constraintStart_toStartOf="@id/textView_VSDSPC_PesoMaterial"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_PesoMaterial" />
+
+    <Button
+        android:id="@+id/button_VSDSPC_Volver"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_VSDSPC_TamañoMaterial" />
+
+    <TextView
+        android:id="@+id/textView_VSDSPC_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Sesion Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_toolbar_aceptar"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/aceptar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

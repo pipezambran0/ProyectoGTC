@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/opciones"
+    android:background="@mipmap/fondo_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Opciones">
+
+    <TextView
+        android:id="@+id/textView_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/opciones"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_opciones"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/opciones"
+        app:layout_constraintEnd_toEndOf="@+id/textView_opciones"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/textView_opciones"
+        app:layout_constraintTop_toBottomOf="@+id/textView_opciones" />
+
+    <Button
+        android:id="@+id/button_opciones_editar"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/editar_perfil"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_opciones"
+        app:layout_constraintStart_toStartOf="@+id/imageView_opciones"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_opciones" />
+
+    <Button
+        android:id="@+id/button_opciones_eliminar"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/eliminar_perfil"
+        app:layout_constraintEnd_toEndOf="@+id/button_opciones_editar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_opciones_editar"
+        app:layout_constraintTop_toBottomOf="@+id/button_opciones_editar" />
+
+    <Button
+        android:id="@+id/button_opciones_ver"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ver_perfiles"
+        app:layout_constraintEnd_toEndOf="@+id/button_opciones_eliminar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_opciones_eliminar"
+        app:layout_constraintTop_toBottomOf="@+id/button_opciones_eliminar" />
+
+    <Button
+        android:id="@+id/button_opciones_volver"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="@+id/button_opciones_ver"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/button_opciones_ver"
+        app:layout_constraintTop_toBottomOf="@+id/button_opciones_ver" />
+
+    <TextView
+        android:id="@+id/textView_opciones_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="SesionActual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

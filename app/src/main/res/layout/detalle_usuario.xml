@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detalle_usuario"
+    android:background="@mipmap/fondo_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleUsuario">
+
+    <TextView
+        android:id="@+id/textView_mostrar_usuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="8dp"
+        android:text="Detalle del Usuario"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_id"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_usuarios"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_usuarios"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_usuarios" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_nombre"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/nombre_y_apellido"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_id"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_id"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_id" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_usuario"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_nombre"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_nombre"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_nombre" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_contraseña"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_usuario"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_usuario"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_usuario" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_correo"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_contraseña"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_contraseña"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_contraseña" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_cedula"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/cedula"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_correo"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_correo"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_correo" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_rol"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/rol"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_cedula"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_cedula"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_cedula" />
+
+    <TextView
+        android:id="@+id/textView_mostrar_genero"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/rol"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_mostrar_rol"
+        app:layout_constraintStart_toStartOf="@id/textView_mostrar_rol"
+        app:layout_constraintTop_toBottomOf="@id/textView_mostrar_rol" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

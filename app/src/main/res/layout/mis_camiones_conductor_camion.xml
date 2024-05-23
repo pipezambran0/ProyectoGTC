@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mis_camiones_conductor_camion"
+    android:background="@mipmap/fondo_conductor_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisCamionesConductorCamion">
+
+    <TextView
+        android:id="@+id/textView_CCMMCA_MisCamionesAsignados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/mis_camiones_asignados"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_CCMMCA_MisCamionesAsignados"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCMMCA_MisCamionesAsignados"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCMMCA_MisCamionesAsignados"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCMMCA_MisCamionesAsignados" />
+
+    <Button
+        android:id="@+id/button_CCMMCA_InformacionCamionAsignado"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/informacion_camion"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_CCMMCA_MisCamionesAsignados"
+        app:layout_constraintStart_toStartOf="@+id/spinner_CCMMCA_MisCamionesAsignados"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_CCMMCA_MisCamionesAsignados" />
+
+    <Button
+        android:id="@+id/button_CCMMCA_Volver"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="@+id/button_CCMMCA_InformacionCamionAsignado"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/button_CCMMCA_InformacionCamionAsignado"
+        app:layout_constraintTop_toBottomOf="@+id/button_CCMMCA_InformacionCamionAsignado" />
+
+    <TextView
+        android:id="@+id/textView_CCMMCA_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sesion Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

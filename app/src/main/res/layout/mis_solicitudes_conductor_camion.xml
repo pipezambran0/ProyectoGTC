@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mis_solicitudes_conductor_camion"
+    android:background="@mipmap/fondo_conductor_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisSolicitudesConductorCamion">
+
+    <TextView
+        android:id="@+id/textView_CCMMS_MisSolicitudes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/mis_solicitudes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_CCMMS_MisSolicitudes"
+        android:layout_width="356dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCMMS_MisSolicitudes"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCMMS_MisSolicitudes"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCMMS_MisSolicitudes" />
+
+    <Button
+        android:id="@+id/button_CCMMS_MiUbicacion"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/mi_ubicacion"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_CCMMS_MisSolicitudes"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/spinner_CCMMS_MisSolicitudes"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_CCMMS_MisSolicitudes" />
+
+    <Button
+        android:id="@+id/button_CCMMS_RutaSugerida"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/ruta_sugerida"
+        app:layout_constraintEnd_toEndOf="@+id/button_CCMMS_MiUbicacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_CCMMS_MiUbicacion"
+        app:layout_constraintTop_toBottomOf="@+id/button_CCMMS_MiUbicacion" />
+
+    <Button
+        android:id="@+id/button_CCMMS_InformacionSolicitud"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/informacion_solicitud"
+        app:layout_constraintEnd_toEndOf="@+id/button_CCMMS_RutaSugerida"
+        app:layout_constraintStart_toStartOf="@+id/button_CCMMS_RutaSugerida"
+        app:layout_constraintTop_toBottomOf="@+id/button_CCMMS_RutaSugerida" />
+
+    <Button
+        android:id="@+id/button_CCMMS_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="@+id/button_CCMMS_InformacionSolicitud"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/button_CCMMS_InformacionSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/button_CCMMS_InformacionSolicitud" />
+
+    <TextView
+        android:id="@+id/textView_CCMMS_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

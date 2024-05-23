@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editar_solicitud"
+    android:background="@mipmap/fondo_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarSolicitud">
+
+    <TextView
+        android:id="@+id/textView_CES_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CES_EditarSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/editar_solicitud"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CES_NombreSolicitud"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Nombre Solicitud"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CES_EditarSolicitud"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/textView_CES_EditarSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CES_EditarSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CES_FechaCarga"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/fecha_carga"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CES_NombreSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CES_FechaDescarga"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/fecha_descarga"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/editText_CES_FechaCarga"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CES_NombreSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CES_LugarCarga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/lugar_carga"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_CES_FechaCarga"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_CES_FechaCarga"
+        app:layout_constraintTop_toBottomOf="@id/editText_CES_FechaCarga" />
+
+    <EditText
+        android:id="@+id/editText_CES_LugarDescarga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/lugar_descarga"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_CES_FechaDescarga"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editText_CES_FechaDescarga"
+        app:layout_constraintTop_toBottomOf="@id/editText_CES_FechaDescarga" />
+
+    <EditText
+        android:id="@+id/editText_CES_TipoMaterial"
+        android:layout_width="211dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="@string/tipo_material"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CES_NombreSolicitud"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/textView_CES_NombreSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CES_NombreSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CES_PesoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/peso_material"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_CES_TipoMaterial"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editText_CES_TipoMaterial"
+        app:layout_constraintTop_toBottomOf="@id/editText_CES_TipoMaterial" />
+
+    <EditText
+        android:id="@+id/editText_CES_TamañoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/tamaño_material"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_CES_PesoMaterial"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/editText_CES_PesoMaterial"
+        app:layout_constraintTop_toBottomOf="@id/editText_CES_PesoMaterial" />
+
+    <Button
+        android:id="@+id/button_CES_ActualizarSolicitud"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/actualizar"
+        app:layout_constraintEnd_toEndOf="@+id/editText_CES_TamañoMaterial"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/editText_CES_TamañoMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CES_TamañoMaterial" />
+
+    <Button
+        android:id="@+id/button_CES_CancelarEditarSolicitud"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="@id/button_CES_ActualizarSolicitud"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/button_CES_ActualizarSolicitud"
+        app:layout_constraintTop_toBottomOf="@id/button_CES_ActualizarSolicitud" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

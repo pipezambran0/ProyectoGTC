@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crear_solicitud"
+    android:background="@mipmap/fondo_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearSolicitud">
+
+    <TextView
+        android:id="@+id/textView_CCS_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CCS_CrearSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/crear_solicitud"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CCS_NombreSolicitud"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Nombre Solicitud"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCS_CrearSolicitud"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCS_CrearSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCS_CrearSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CCS_FechaCarga"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/fecha_carga"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCS_NombreSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CCS_FechaDescarga"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/fecha_descarga"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toEndOf="@+id/editText_CCS_FechaCarga"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCS_NombreSolicitud" />
+
+    <EditText
+        android:id="@+id/editText_CCS_LugarCarga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/lugar_carga"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_CCS_FechaCarga"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_CCS_FechaCarga"
+        app:layout_constraintTop_toBottomOf="@id/editText_CCS_FechaCarga" />
+
+    <EditText
+        android:id="@+id/editText_CCS_LugarDescarga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/lugar_descarga"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_CCS_FechaDescarga"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editText_CCS_FechaDescarga"
+        app:layout_constraintTop_toBottomOf="@id/editText_CCS_FechaDescarga" />
+
+    <EditText
+        android:id="@+id/editText_CCS_TipoMaterial"
+        android:layout_width="211dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="@string/tipo_material"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCS_NombreSolicitud"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCS_NombreSolicitud"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCS_NombreSolicitud" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_CCS_PesoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/editText_CCS_TipoMaterial"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editText_CCS_TipoMaterial"
+        app:layout_constraintTop_toBottomOf="@id/editText_CCS_TipoMaterial">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_CCS_PesoMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/peso_material"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_CCS_TamañoMaterial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayout_CCS_PesoMaterial"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textInputLayout_CCS_PesoMaterial"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_CCS_PesoMaterial">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_CCS_TamañoMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/tamaño_material"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_CCS_CrearSolicitud"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/crear"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_CCS_TamañoMaterial"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_CCS_TamañoMaterial"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_CCS_TamañoMaterial" />
+
+    <Button
+        android:id="@+id/button_CCS_CancelarSolicitud"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="@id/button_CCS_CrearSolicitud"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/button_CCS_CrearSolicitud"
+        app:layout_constraintTop_toBottomOf="@id/button_CCS_CrearSolicitud" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

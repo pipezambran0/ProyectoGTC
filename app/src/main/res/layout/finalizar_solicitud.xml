@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/finalizar_solicitud"
+    android:background="@mipmap/fondo_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalizarSolicitud">
+
+    <TextView
+        android:id="@+id/textView_CFS_Califica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Califica el servicio"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_CFS_Califica"
+        android:layout_width="278dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/calificacion"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CFS_Califica"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/textView_CFS_Califica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CFS_Califica" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_CFS_Califica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_CFS_Califica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:numStars="5"
+        android:stepSize="1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_CFS_Califica"
+        app:layout_constraintStart_toStartOf="@+id/imageView_CFS_Califica"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_CFS_Califica" />
+
+    <Button
+        android:id="@+id/button_CFS_Volver"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar_CFS_Califica"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar_CFS_Califica"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar_CFS_Califica"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_CFS_Califica" />
+
+    <Button
+        android:id="@+id/button_CFS_Finalizar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar_CFS_Califica"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:text="Finalizar"
+        app:layout_constraintEnd_toEndOf="@+id/button_CFS_Volver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_CFS_Volver"
+        app:layout_constraintTop_toBottomOf="@+id/button_CFS_Volver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

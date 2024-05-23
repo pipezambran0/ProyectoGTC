@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mi_ubicacion_conductor_camion"
+    android:background="@mipmap/fondo_conductor_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiUbicacionConductorCamion">
+
+    <TextView
+        android:id="@+id/textView_CCMU_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CCMU_Latitud"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/latitud"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CCMU_Longitud"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/longitud"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CCMU_Latitud"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_CCMU_Latitud"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCMU_Latitud" />
+
+    <fragment
+        android:id="@+id/map_CCMU_MiUbicacion"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="360dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CCMU_Longitud"
+        map:cameraZoom="10"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true" />
+
+    <Button
+        android:id="@+id/button_CCMU_Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toStartOf="@+id/button_CCMU_CompartirUbicacion"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/map_CCMU_MiUbicacion"
+        app:layout_constraintTop_toBottomOf="@+id/map_CCMU_MiUbicacion" />
+
+    <Button
+        android:id="@+id/button_CCMU_CompartirUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/compartir_ubicacion"
+        app:layout_constraintEnd_toEndOf="@+id/map_CCMU_MiUbicacion"
+        app:layout_constraintTop_toBottomOf="@+id/map_CCMU_MiUbicacion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

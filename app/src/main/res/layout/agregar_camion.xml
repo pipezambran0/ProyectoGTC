@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agregar_camion"
+    android:background="@mipmap/fondo_propietario_camion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarCamion">
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_AgregarCamion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="@string/agregar_camion"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_PCMCAC_Placa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="@string/placa"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_PCMCAC_AgregarCamion"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMCAC_AgregarCamion"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_AgregarCamion" />
+
+
+    <EditText
+        android:id="@+id/editText_PCMCAC_Marca"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/marca"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_PCMCAC_Placa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_PCMCAC_Placa"
+        app:layout_constraintTop_toBottomOf="@+id/editText_PCMCAC_Placa" />
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_NumeroViajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/numero_viajes"
+        app:layout_constraintStart_toStartOf="@+id/editText_PCMCAC_Marca"
+        app:layout_constraintTop_toBottomOf="@+id/editText_PCMCAC_Marca" />
+
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_Viajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/editText_PCMCAC_Marca"
+        app:layout_constraintTop_toBottomOf="@+id/editText_PCMCAC_Marca" />
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_IdPropietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/id_propietario_del_camion"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMCAC_NumeroViajes"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_NumeroViajes" />
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_Propietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMCAC_NumeroViajes"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_Viajes" />
+
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_conductor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/cedulas_conductores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_EstadoCamion" />
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_EstadoCamion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/estado_camion"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMCAC_IdPropietario"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_IdPropietario" />
+
+    <Spinner
+        android:id="@+id/spinner_PCMCAC_ConductoresDisponibles"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editText_PCMCAC_Marca"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_conductor" />
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_Estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="Disponible"
+        app:layout_constraintStart_toStartOf="@+id/textView_PCMCAC_IdPropietario"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PCMCAC_Propietario" />
+
+    <Button
+        android:id="@+id/button_PCMCAC_AgregarCamion"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:text="@string/agregar"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_PCMCAC_ConductoresDisponibles"
+        app:layout_constraintStart_toStartOf="@+id/spinner_PCMCAC_ConductoresDisponibles"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_PCMCAC_ConductoresDisponibles" />
+
+    <Button
+        android:id="@+id/button_PCMCAC_Cancelar"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="@+id/button_PCMCAC_AgregarCamion"
+        app:layout_constraintStart_toStartOf="@+id/button_PCMCAC_AgregarCamion"
+        app:layout_constraintTop_toBottomOf="@+id/button_PCMCAC_AgregarCamion" />
+
+    <TextView
+        android:id="@+id/textView_PCMCAC_SesionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sesion Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

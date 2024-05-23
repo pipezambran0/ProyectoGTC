@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ProyectoGTC</string>
+
+    <string name="app_gtc">APP GTC</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+
+    <string name="crear_cuenta_nueva">Crear Cuenta Nueva</string>
+    <string name="id">Id</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="confirmar_contraseña">Confirmar Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="nombre_y_apellido">Nombre y Apellido</string>
+    <string name="cedula">Cédula</string>
+    <string name="genero">Género:</string>
+    <string name="rol">Elije tu Rol</string>
+    <string-array name="user_registrar_rol">
+        <item>Cliente</item>
+        <item>Propietario de Camión</item>
+        <item>Conductor de Camión</item>
+    </string-array>
+
+    <string name="menu_cliente">Menú Cliente</string>
+    <string name="menu_propietario_de_camion">Menú Propietario de Camión</string>
+    <string name="menu_conductor_de_camion">Menú Conductor de Camión</string>
+
+    <string name="crear_solicitud">Crear Solicitud</string>
+    <string name="ver_solicitudes">Ver Solicitudes</string>
+    <string name="mis_solicitudes">Mis Solicitudes</string>
+    <string name="mis_camiones">Mis Camiones</string>
+    <string name="mis_camiones_asignados">Mis Camiones Asignados</string>
+    <string name="mis_solicitudes_asignadas">Mis Solicitudes Asignadas</string>
+    <string name="salir">Salir</string>
+
+    <string name="opciones">Opciones</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="eliminar_perfil">Eliminar Perfil</string>
+    <string name="ver_perfiles">Ver Perfiles</string>
+    <string name="volver">Volver</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="usuarios_registrados">Usuarios Registrados</string>
+
+    <string name="crear">Crear</string>
+    <string name="fecha_carga">Fecha de Carga</string>
+    <string name="lugar_carga">Lugar de Carga</string>
+    <string name="fecha_descarga">Fecha de Descarga</string>
+    <string name="lugar_descarga">Lugar de Descarga</string>
+    <string name="tipo_material">Tipo de Material</string>
+    <string name="peso_material">Peso del Material</string>
+    <string name="tamaño_material">Tamaño del Material</string>
+    <string name="nombre_solicitud">Nombre de la Solicitud</string>
+
+    <string name="editar_solicitud">Editar Solicitud</string>
+    <string name="eliminar_solicitud">Eliminar Solicitud</string>
+    <string name="finalizar_solicitud">Finalizar Solicitud</string>
+    <string name="chat_solicitud">Chat Solicitud</string>
+
+    <string name="agregar_camion">Agregar Camión</string>
+    <string name="editar_camion">Editar Camión</string>
+    <string name="eliminar_camion">Eliminar Camión</string>
+    <string name="informacion_camion">Información del Camión</string>
+    <string name="placa">PLACA</string>
+    <string name="marca">Marca</string>
+    <string name="numero_viajes">Numero de Viajes: </string>
+    <string name="id_propietario_del_camion">Propietario: </string>
+    <string name="cedulas_conductores">Cedulas de Conductores Disponibles</string>
+    <string name="estado_camion">Estado :</string>
+    <string name="agregar">Agregar</string>
+    <string name="informacion_solicitud">Informacion Solicitud</string>
+
+    <string name="solicitudes_disponibles">Solicitudes Disponibles</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="asignar_camion">Asignar Camión</string>
+    <string name="asignar">Asignar</string>
+    <string name="mi_ubicacion">Mi Ubicación</string>
+    <string name="ruta_sugerida">Ruta Sugerida</string>
+    <string name="title_activity_mi_ubicacion_conductor_camion">MiUbicacionConductorCamion</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="compartir_ubicacion">Compartir Ubicación</string>
+</resources>
